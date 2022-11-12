@@ -1,0 +1,114 @@
+.carrousel { 
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+
+/* :root {
+    --purple: rgb(71, 50, 93);
+    --cyan: rgb(117, 105, 250);
+    --indigo: indigo ;
+    --salmon: rgb(194, 167, 189) ;
+    --gray: rgb(76, 87, 115) ;
+    
+}
+
+html {
+    font-size: 0.8rem;
+  }
+body {background-color: var(--salmon);}
+
+h1 { color: var(--purple);}
+
+h4, p { color: var(--gray);}
+
+a { 
+  max-height: 10px;
+  color: var(--cyan)}
+
+/* Header */
+/*
+header {
+  height: 20px ;
+  position: absolute;
+}
+
+header img {
+  position: relative;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--purple);
+  background-color: var(--salmon);
+  box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+}
+
+.btn-primary { 
+  background-color: var(--purple); 
+  
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #0d6efd;
+  --bs-btn-border-color: #0d6efd;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+
+.accordion-button { color: var(--indigo);} */
+
+.image-div{
+
+  position:relative;
+  overflow:hidden;
+  padding-bottom:100%;
+}
+
+.image-div img{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .challengeHomeBtn {
+  background-color: rgb(101, 206, 255);
+  
+  height: 15px;
+
+} */
+
+/* Bootstrap responsive */
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
